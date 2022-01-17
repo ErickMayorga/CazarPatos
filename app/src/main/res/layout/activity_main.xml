@@ -4,15 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_game"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageViewPato"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/duck"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <ImageView
+        android:id="@+id/imageViewContador"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duck_hunt_logo" />
+
     <TextView
+        android:id="@+id/textViewContador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/pixel"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewContador"
+        app:layout_constraintStart_toEndOf="@+id/imageViewContador"
+        app:layout_constraintTop_toTopOf="@+id/imageViewContador" />
+
+    <TextView
+        android:id="@+id/textViewUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/pixel"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewTiempo"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTiempo"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTiempo"
+        app:layout_constraintTop_toTopOf="@+id/textViewTiempo"
+        app:srcCompat="@drawable/timer" />
+
+    <TextView
+        android:id="@+id/textViewTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pixel"
+        android:text="60s"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
