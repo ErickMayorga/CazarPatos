@@ -1,4 +1,4 @@
-package com.mayorgaerick.cazarpatos
+package com.mayorgaerick.cazarpatos.FileManagers
 
 interface FileHandler {
     fun SaveInformation(datosAGrabar:Pair<String,String>)

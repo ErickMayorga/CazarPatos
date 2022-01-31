@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textViewPosicion"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="POS."
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textViewPatosCazados"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/press_start_2p"
+        android:gravity="center"
+        android:text="Patos"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPosicion"
+        app:layout_constraintStart_toEndOf="@+id/textViewPosicion"
+        app:layout_constraintTop_toTopOf="@+id/textViewPosicion" />
+    <TextView
+        android:id="@+id/textViewUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Jugador"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPatosCazados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPatosCazados"
+        app:layout_constraintTop_toTopOf="@+id/textViewPatosCazados" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

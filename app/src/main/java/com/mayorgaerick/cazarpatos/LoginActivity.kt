@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
+import com.mayorgaerick.cazarpatos.FileManagers.FileHandler
+import com.mayorgaerick.cazarpatos.FileManagers.SharedPreferencesManager
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var manejadorArchivo: FileHandler

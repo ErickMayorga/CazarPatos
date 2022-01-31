@@ -1,7 +1,8 @@
-package com.mayorgaerick.cazarpatos
+package com.mayorgaerick.cazarpatos.FileManagers
 
 import android.app.Activity
 import android.content.Context
+import com.mayorgaerick.cazarpatos.INTERNAL_FILENAME
 
 class FileInternalManager(val actividad: Activity): FileHandler {
     override fun SaveInformation(datosAGrabar: Pair<String, String>) {

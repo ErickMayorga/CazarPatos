@@ -1,7 +1,8 @@
-package com.mayorgaerick.cazarpatos
+package com.mayorgaerick.cazarpatos.FileManagers
 
 import android.app.Activity
 import android.os.Environment
+import com.mayorgaerick.cazarpatos.SHAREDINFO_FILENAME
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream

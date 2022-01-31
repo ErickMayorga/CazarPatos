@@ -1,8 +1,10 @@
-package com.mayorgaerick.cazarpatos
+package com.mayorgaerick.cazarpatos.FileManagers
 
 import android.app.Activity
 import androidx.security.crypto.MasterKeys
 import androidx.security.crypto.EncryptedSharedPreferences
+import com.mayorgaerick.cazarpatos.LOGIN_KEY
+import com.mayorgaerick.cazarpatos.PASSWORD_KEY
 
 class EncryptedSharedPreferences(val actividad: Activity): FileHandler {
     //Validar si existen datos en archivo de preferencia, y cargar
